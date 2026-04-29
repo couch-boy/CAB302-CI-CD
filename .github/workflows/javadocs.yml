@@ -28,7 +28,7 @@ jobs:
         cache: maven
         
     - name: Generate Javadoc
-      run: mvn javadoc:javadoc
+      run: mvn compile javadoc:javadoc
       
     - name: Publish Javadoc
       uses: JamesIves/github-pages-deploy-action@v4
