@@ -26,6 +26,7 @@ jobs:
         java-version: '21'
         distribution: 'corretto'
         cache: maven
+        
     - name: Generate Javadoc
       run: mvn javadoc:javadoc
       
@@ -33,4 +34,3 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: target/docs/javadoc
-        branch: gh-pages
