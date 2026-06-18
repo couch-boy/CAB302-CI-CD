@@ -12,9 +12,11 @@ public enum UserType {
         this.displayName = displayName;
     }
 
+    /*
     // Override for default toString functionality
     @Override
     public String toString() { return displayName; }
+     */
 
     // Getter
     public String getDisplayName() {
